@@ -21,19 +21,19 @@ The primary goal is to provide an overview of the risks and potential fines the 
 The results of this audit will help Botium Toys strengthen their security posture and ensure compliance with applicable regulations as the company continues to grow.  
 
 
-# Botium Toys: Scope, Goals, and Risk Assessment Report
+# **Botium Toys: Scope, Goals, and Risk Assessment Report**
 
-## Scope and Goals of the Audit
+## **Scope and Goals of the Audit**
 
-### Scope
+### **Scope**
 The scope is defined as the entire security program at Botium Toys. This means all assets need to be assessed alongside internal processes and procedures related to the implementation of controls and compliance best practices.
 
-### Goals
+### **Goals**
 Assess existing assets and complete the controls and compliance checklist to determine which controls and compliance best practices need to be implemented to improve Botium Toys’ security posture.
 
 ---
 
-## Current Assets
+## **Current Assets**
 Assets managed by the IT Department include: 
 - **On-premises equipment** for in-office business needs.  
 - **Employee equipment**: end-user devices (desktops/laptops, smartphones), remote workstations, headsets, cables, keyboards, mice, docking stations, surveillance cameras, etc.
@@ -46,25 +46,25 @@ Assets managed by the IT Department include:
 
 ---
 
-## Risk Assessment
+## **Risk Assessment**
 
-### Risk Description
+### **Risk Description**
 Currently, there is inadequate management of assets. Additionally, Botium Toys does not have all of the proper controls in place and may not be fully compliant with U.S. and international regulations and standards. 
 
-### Control Best Practices
+### **Control Best Practices**
 The first of the five functions of the **NIST Cybersecurity Framework (CSF)** is *Identify*. Botium Toys will need to:
 - Dedicate resources to identify assets for appropriate management.
 - Classify existing assets and determine the impact of their loss on business continuity.
 
-### Risk Score
+### **Risk Score**
 On a scale of 1 to 10, the risk score is **8**, which is fairly high due to a lack of controls and adherence to compliance best practices.
 
 ---
 
-## Additional Comments
+## **Additional Comments**
 The potential impact from the loss of an asset is rated as **medium**, because the IT department does not know which assets would be at risk. The risk to assets or fines from governing bodies is rated as **high** because Botium Toys does not have all necessary controls in place or fully adhere to compliance regulations to keep critical data private and secure. Below are specific details:
 
-### Identified Issues:
+### **Identified Issues:**
 - **Employee access**: All employees currently have access to internally stored data, including cardholder data and customers' PII/SPII.
 - **Encryption**: Customers' credit card information is not encrypted during acceptance, processing, transmission, or storage.
 - **Access controls**: Least privilege and separation of duties have not been implemented.
@@ -83,3 +83,4 @@ The potential impact from the loss of an asset is rated as **medium**, because t
 ---
 
 By addressing these issues, Botium Toys can significantly enhance its security posture and reduce risks to its assets, data, and compliance efforts.
+
