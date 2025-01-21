@@ -1,0 +1,20 @@
+# Internal Audit Scenario: Botium Toys  
+
+This scenario is based on a fictional company:  
+
+**Botium Toys** is a small U.S. business that develops and sells toys. The company operates from a single physical location that functions as their main office, a storefront, and a warehouse for their products. Over time, **Botium Toys’** online presence has grown, attracting customers in the U.S. and internationally. This expansion has increased the pressure on their Information Technology (IT) department to support a global online market.  
+
+The IT department manager has decided to conduct an internal IT audit to address growing concerns. She is focused on maintaining compliance and ensuring the company can sustain business operations as it scales, despite lacking a clear plan. The internal audit aims to secure the company’s infrastructure, identify and mitigate potential risks, threats, and vulnerabilities to critical assets, and ensure compliance with regulations. Particular attention is being paid to regulations regarding:  
+- Internally processing and accepting online payments.  
+- Conducting business in the European Union (E.U.).  
+
+To address these challenges, the IT manager has implemented the **National Institute of Standards and Technology Cybersecurity Framework (NIST CSF)** and taken the following steps:  
+1. **Defined Audit Scope and Goals:** Established clear objectives for the internal audit.  
+2. **Listed Managed Assets:** Documented assets currently overseen by the IT department.  
+3. **Completed a Risk Assessment:** Evaluated risks and potential vulnerabilities in the current security posture.  
+
+### Objective of the Audit  
+The primary goal is to provide an overview of the risks and potential fines the company may face due to its current security posture.  
+
+The results of this audit will help Botium Toys strengthen their security posture and ensure compliance with applicable regulations as the company continues to grow.  
+
