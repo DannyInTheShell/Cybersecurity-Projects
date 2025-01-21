@@ -2,9 +2,15 @@
 
 This scenario is based on a fictional company:  
 
-**Botium Toys** is a small U.S. business that develops and sells toys. The company operates from a single physical location that functions as their main office, a storefront, and a warehouse for their products. Over time, **Botium Toys’** online presence has grown, attracting customers in the U.S. and internationally. This expansion has increased the pressure on their Information Technology (IT) department to support a global online market.  
+**Botium Toys** is a small U.S. business that develops and sells toys. The company operates from a single physical location that functions as their main office, a storefront, and a warehouse for their products. 
+Over time, **Botium Toys’** online presence has grown, attracting customers in the U.S. and internationally. This expansion has increased the pressure on their Information Technology (IT) department to support 
+a global online market.  
 
-The IT department manager has decided to conduct an internal IT audit to address growing concerns. She is focused on maintaining compliance and ensuring the company can sustain business operations as it scales, despite lacking a clear plan. The internal audit aims to secure the company’s infrastructure, identify and mitigate potential risks, threats, and vulnerabilities to critical assets, and ensure compliance with regulations. Particular attention is being paid to regulations regarding:  
+The IT department manager has decided to conduct an internal IT audit to address growing concerns. She is focused on maintaining compliance and ensuring the company can sustain business operations as it scales, 
+despite lacking a clear plan. The internal audit aims to secure the company’s infrastructure, identify and mitigate potential risks, threats, and vulnerabilities to critical assets, and ensure compliance with 
+regulations. 
+
+Particular attention is being paid to regulations regarding:  
 - Internally processing and accepting online payments.  
 - Conducting business in the European Union (E.U.).  
 
