@@ -126,6 +126,8 @@ error "Neither nft nor iptables found on this system; cannot apply remediation."
 
 # After running, verify from another host:
   # Using Nmap (Windows or Linux): nmap -sO -p 13,14 <host-ip> (should show filtered)
+    # Note: You may get error if FW or NSG is blocking Ping: "Host seems down. If it is really up, but blocking our ping probes, try -Pn"
+      # nmap -sO -Pn -p 13,14 <host-ip>
   # Using hping3 on Linux: sudo hping3 -1 --icmptype 13 <host-ip> (no reply expected)
 
 # To inspect the rules:
