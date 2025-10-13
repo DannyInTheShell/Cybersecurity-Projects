@@ -3,6 +3,7 @@
 # Purpose: Filter out ICMP timestamp request (13) and timestamp reply (14)
 #          on Ubuntu 22.04. Prefers nftables; falls back to iptables.
 # Usage: sudo ./remediate-icmp-timestamp.sh
+# See after script notes
 
 set -euo pipefail
 
@@ -106,3 +107,27 @@ if command -v iptables >/dev/null 2>&1; then
 fi
 
 error "Neither nft nor iptables found on this system; cannot apply remediation."
+
+# Basic Instructions:
+
+# Download the script:
+# wget https://raw.githubusercontent.com/dcgrx45/Cybersecurity-Projects/refs/heads/main/remediate-icmp-timestamp.sh --no-check-certificate
+  # To connect to raw.githubusercontent.com insecurely, use `--no-check-certificate'
+
+# Make script executable:
+# chmod +x remediate-icmp-timestamp.sh
+
+# Execute the script:
+# ./remediate-icmp-timestamp.sh
+
+# Notes, safety, and verification:
+
+# If UFW (Uncomplicated Firewall) or another firewall manager is active, this script still adds rules at the kernel netfilter level; however, you should review how UFW interacts with nft/iptables on your system. UFW on Ubuntu 22.04 uses iptables/nft under the hood — the script is compatible but test on staging first.
+
+# After running, verify from another host:
+  # Using Nmap (Windows or Linux): nmap -sO -p 13,14 <host-ip> (should show filtered)
+  # Using hping3 on Linux: sudo hping3 -1 --icmptype 13 <host-ip> (no reply expected)
+
+# To inspect the rules:
+  # nft: sudo nft list ruleset or sudo nft list table inet filter
+  # iptables: sudo iptables -L -v -n
