@@ -17,4 +17,4 @@ I would also greatly appreciate any feedback you wish to offer.
 
 📧 Email: [DCGRX45@gmail.com](mailto:DCGRX45@gmail.com)  
 
-Thank you for your time and interest in my work—I hope you enjoy exploring my projects! 
+Thank you for your time and interest in my work! I hope you enjoy exploring my projects! 
