@@ -94,7 +94,7 @@ function Uninstall-Wireshark {
         }
         catch {
             # FIX: Use ${_} to avoid parser error
-            Write-Error "Failed to uninstall $displayName: ${_}"
+            Write-Error "Failed to uninstall $displayName: $($_)"
         }
     }
 }
