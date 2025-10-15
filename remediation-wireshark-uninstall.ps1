@@ -1,3 +1,7 @@
+# Dot-source the script to load it and its comment-based help into your current PowerShell session. 
+# Navigate to the directory where the script is stored.
+# Type and run exactly this (with the space between the two dots): . .\remediation-wireshark-uninstall.ps1"
+
 <#
 .SYNOPSIS
 Uninstalls any installed version of Wireshark from the system executing the script.
