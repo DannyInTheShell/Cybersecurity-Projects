@@ -90,6 +90,7 @@ function Uninstall-Wireshark {
 
         try {
             # Attempt to uninstall application
+            $uninstallCmd = "`"$($install.Path)`" $silentUninstallSwitch"
             Start-Process -FilePath "cmd.exe" -ArgumentList "/c $uninstallCmd" -Wait -ErrorAction Stop
             Write-Host "Successfully uninstalled $displayName"
         }
