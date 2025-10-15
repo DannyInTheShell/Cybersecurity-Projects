@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-# remediate-icmp-timestamp.sh
+# remediation-icmp-timestamp.sh
 # Purpose: Filter out ICMP timestamp request (13) and timestamp reply (14)
 #          on Ubuntu 22.04. Prefers nftables; falls back to iptables.
-# Usage: sudo ./remediate-icmp-timestamp.sh
+# Usage: sudo ./remediation-icmp-timestamp.sh
 
 # Author        : Danny Cologero
 # Date Created  : 10-14-2025
@@ -117,14 +117,14 @@ error "Neither nft nor iptables found on this system; cannot apply remediation."
 # Basic Instructions:
 
 # Download the script:
-# wget https://raw.githubusercontent.com/dcgrx45/Cybersecurity-Projects/refs/heads/main/remediate-icmp-timestamp.sh --no-check-certificate
+# wget https://raw.githubusercontent.com/dcgrx45/Cybersecurity-Projects/refs/heads/main/remediation-icmp-timestamp.sh --no-check-certificate
   # To connect to raw.githubusercontent.com insecurely, use `--no-check-certificate'
 
 # Make script executable:
-# chmod +x remediate-icmp-timestamp.sh
+# chmod +x remediation-icmp-timestamp.sh
 
 # Execute the script:
-# ./remediate-icmp-timestamp.sh
+# ./remediation-icmp-timestamp.sh
 
 # Notes, safety, and verification:
 
