@@ -94,7 +94,7 @@ function Uninstall-Wireshark {
             Write-Host "Successfully uninstalled $displayName"
         }
         catch {
-            Write-Error "Failed to uninstall $displayName: $($_)"
+            Write-Error "Failed to uninstall ${displayName}: $($_)"
         }
 
     }
