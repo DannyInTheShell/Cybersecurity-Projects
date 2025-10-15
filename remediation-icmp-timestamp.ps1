@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-  Blocks or removes ICMP Timestamp Request (Type 13) and Timestamp Reply (Type 14) on Windows Server 2019.
+  Blocks or removes ICMP Timestamp Request (Type 13) and Timestamp Reply (Type 14) on Windows Server 2019 or Windows 11.
 
 .DESCRIPTION
   This script remediates the “ICMP Timestamp Request Remote Date Disclosure” vulnerability (Plugin ID 10114)
@@ -22,12 +22,12 @@
   10-15-2025
 
 .VERSION
-  1.2
+  1.3 (Windows 11 compatible)
 
 .HOW TO USE
 1. Open PowerShell as Administrator.
 2. Navigate to the folder containing this script:
-     Example: cd "C:\Users\danny\Desktop"
+     cd "C:\Users\danny\Desktop"
 3. To apply the remediation (block ICMP timestamp):
      .\remediation-icmp-timestamp.ps1
 4. To remove the rules (revert):
@@ -38,19 +38,28 @@
      Get-NetFirewallRule | findstr Timestamp
 2. Confirm the rules block traffic from another host:
      nmap -sO -p 13,14 <server-ip>
-     (ICMP Type 13 & 14 should be filtered)
       Note: You may get error if FW or NSG is blocking Ping: "Host seems down. If it is really up, but blocking our ping probes, try -Pn"
-      # nmap -sO -Pn -p 13,14 <host-ip>
+      nmap -sO -Pn -p 13,14 <host-ip>
 3. Rules persist across reboots; check again after restart.
 
 .NOTES
-  Requires: Windows Server 2019 Datacenter (Build 1809), PowerShell 5.1.17763.7786
+  Requires: Windows Server 2019 Datacenter (Build 1809) or Windows 11, PowerShell 5.1+
   Administrative privileges required to run.
 #>
 
 param(
     [switch]$Revert
 )
+
+# ----------------------------------------
+# Ensure script can run in Windows 11 session
+# ----------------------------------------
+if ($PSVersionTable.PSVersion.Major -ge 5) {
+    # Temporarily allow script execution in this session if restricted
+    if ((Get-ExecutionPolicy) -eq "Restricted") {
+        Set-ExecutionPolicy RemoteSigned -Scope Process -Force
+    }
+}
 
 # ----------------------------------------
 # Logging Setup
