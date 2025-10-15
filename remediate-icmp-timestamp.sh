@@ -3,6 +3,12 @@
 # Purpose: Filter out ICMP timestamp request (13) and timestamp reply (14)
 #          on Ubuntu 22.04. Prefers nftables; falls back to iptables.
 # Usage: sudo ./remediate-icmp-timestamp.sh
+
+# Author        : Danny Cologero
+# Date Created  : 10-14-2025
+# Date Modified : 10-14-2025
+# Version       : 1.0
+
 # See after script notes
 
 set -euo pipefail
