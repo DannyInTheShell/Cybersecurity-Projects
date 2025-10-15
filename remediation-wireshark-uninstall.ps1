@@ -5,7 +5,8 @@ Uninstalls any installed version of Wireshark from the system executing the scri
 .DESCRIPTION
 This script detects and uninstalls any installed version of Wireshark silently.
 It checks both 64-bit and 32-bit installation paths, logs results, and requires
-Administrator privileges to run.
+Administrator privileges to run. Tested on multiple Wireshark versions.
+Please test thoroughly in a non-production environment before deploying widely.
 
 .NOTES
 Author        : Danny
@@ -19,31 +20,6 @@ PowerShell Ver: 5.1.17763.7786
 PS C:\> .\remediation-wireshark-uninstall.ps1
 Runs the script to automatically uninstall all installed Wireshark versions.
 
-#>
-
-
-<#
-.SYNOPSIS
-    Uninstalls any installed version of Wireshark from the system executing the script.
-    Tested on multiple Wireshark versions.
-    Please test thoroughly in a non-production environment before deploying widely.
-    Make sure to run as Administrator or with appropriate privileges.
-
-.NOTES
-    Author        : Danny
-    Date Created  : 10-15-2025
-    Last Modified : 10-15-2025
-    Version       : 1.2
-
-.TESTED ON
-    Date(s) Tested    : 10-15-2025
-    Tested By         : Danny
-    Systems Tested    : Windows Server 2019 Datacenter, Build 1809
-    PowerShell Ver.   : 5.1.17763.7786
-
-.USAGE
-    Example syntax:
-    PS C:\> .\remediation-wireshark-uninstall.ps1 
 #>
 
 # ----------------------------------------
