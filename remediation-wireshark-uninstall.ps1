@@ -89,13 +89,14 @@ function Uninstall-Wireshark {
         Write-Output "Uninstalling $displayName..."
 
         try {
-            & $install.Path $silentUninstallSwitch
-            Write-Output "$displayName has been uninstalled successfully."
+            # Attempt to uninstall application
+            Start-Process -FilePath "cmd.exe" -ArgumentList "/c $uninstallCmd" -Wait -ErrorAction Stop
+            Write-Host "Successfully uninstalled $displayName"
         }
         catch {
-            # FIX: Use ${_} to avoid parser error
             Write-Error "Failed to uninstall $displayName: $($_)"
         }
+
     }
 }
 
