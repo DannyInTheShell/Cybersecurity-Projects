@@ -39,6 +39,8 @@
 2. Confirm the rules block traffic from another host:
      nmap -sO -p 13,14 <server-ip>
      (ICMP Type 13 & 14 should be filtered)
+     Note: You may get error if FW or NSG is blocking Ping: "Host seems down. If it is really up, but blocking our ping probes, try -Pn"
+      # nmap -sO -Pn -p 13,14 <host-ip>
 3. Rules persist across reboots; check again after restart.
 
 .NOTES
