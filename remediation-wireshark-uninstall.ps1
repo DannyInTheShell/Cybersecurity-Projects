@@ -6,14 +6,14 @@
     Make sure to run as Administrator or with appropriate privileges.
 
 .NOTES
-    Author        : Danny Cologero
+    Author        : Danny
     Date Created  : 10-15-2025
     Last Modified : 10-15-2025
     Version       : 1.2
 
 .TESTED ON
     Date(s) Tested    : 10-15-2025
-    Tested By         : Danny Cologero
+    Tested By         : Danny
     Systems Tested    : Windows Server 2019 Datacenter, Build 1809
     PowerShell Ver.   : 5.1.17763.7786
 
@@ -60,7 +60,7 @@ function Get-WiresharkInstallPaths {
             # Look for uninstall.exe in the folder
             $uninstaller = Join-Path $path "uninstall.exe"
             if (Test-Path $uninstaller) {
-                # FIX: Use Get-Item for reliable version detection
+                # Use Get-Item for reliable version detection
                 $version = (Get-Item $uninstaller).VersionInfo.ProductVersion
                 $installedPaths += [PSCustomObject]@{
                     Path    = $uninstaller
@@ -105,3 +105,4 @@ function Uninstall-Wireshark {
 Uninstall-Wireshark
 
 Stop-Transcript
+
