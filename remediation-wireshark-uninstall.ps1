@@ -93,7 +93,8 @@ function Uninstall-Wireshark {
             Write-Output "$displayName has been uninstalled successfully."
         }
         catch {
-            Write-Error "Failed to uninstall $displayName: $_"
+            # FIX: Use ${_} to avoid parser error
+            Write-Error "Failed to uninstall $displayName: ${_}"
         }
     }
 }
