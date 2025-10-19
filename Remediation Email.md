@@ -1,6 +1,6 @@
 **Subject:** Vulnerability Remediation Scripts for Testing and Deployment
 
-**Hi [Team],**
+**Hi Luca,**
 
 Based on our initial vulnerability scan and assessment, we have created a set of scripts to assist with the first wave of remediation efforts. These scripts address critical findings and can be deployed using your standard configuration management tools (e.g., SCCM, Intune, or Ansible).  
 
@@ -18,5 +18,6 @@ Let me know if you have any questions or need any adjustments!
 
 Best regards,
 
-**[Your Name], Security Analyst**<br/>
+**Danny Cologero**<br/>
+**Threat and Vulnerability Management Analyst**<br/>
 **Governance, Risk, and Compliance**
