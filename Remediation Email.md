@@ -12,7 +12,7 @@ Please ensure all scripts are tested in a controlled environment prior to produc
 3. [**Windows OS Secure Configuration (Insecure Ciphersuites)**](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-cipher-suites.ps1)
 4. [**Windows OS Secure Configuration (Guest Account Group Membership)**](https://github.com/joshmadakor1/lognpacific-public/blob/main/automation/toggle-guest-local-administrators.ps1)
 5. [**CVE-2013-3900 (Enable certificate padding check)**](https://github.com/DannyInTheShell/Cybersecurity-Projects/blob/main/remediation-cve-2013-3900.ps1)
-6. [**ICMP Timestamp (Filter ICMP timestamp requests/replies)**]()
+6. [**ICMP Timestamp (Filter ICMP timestamp requests/replies)**](https://github.com/DannyInTheShell/Cybersecurity-Projects/blob/main/remediation-icmp-timestamp.ps1)
 
 Please review and provide feedback once testing is complete. Let me know if any adjustments or additional scripts are needed.
 
