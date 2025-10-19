@@ -13,7 +13,7 @@ Administrator privileges to run. Tested on multiple Wireshark versions.
 Please test thoroughly in a non-production environment before deploying widely.
 
 .NOTES
-Author        : Danny
+Author        : Danny Cologero
 Date Created  : 10-15-2025
 Last Modified : 10-15-2025
 Version       : 1.2
