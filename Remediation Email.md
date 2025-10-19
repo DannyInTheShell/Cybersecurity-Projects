@@ -1,6 +1,6 @@
 **Subject:** Vulnerability Remediation Scripts for Testing and Deployment
 
-**Hi Luca,**
+Hi Luca,
 
 Based on our initial vulnerability scan and assessment, we have created a set of scripts to assist with the first wave of remediation efforts. These scripts address critical findings and can be deployed using your standard configuration management tools (e.g., SCCM, Intune, or Ansible).  
 
@@ -14,10 +14,10 @@ Please ensure all scripts are tested in a controlled environment prior to produc
 5. [**CVE-2013-3900 (Enable certificate padding check)**]()
 6. [**ICMP Timestamp (Filter ICMP timestamp requests/replies)**]()
 
-Let me know if you have any questions or need any adjustments!
+Please review and provide feedback once testing is complete. Let me know if any adjustments or additional scripts are needed.
 
 Best regards,
 
-**Danny Cologero**<br/>
-**Threat and Vulnerability Management Analyst**<br/>
-**Governance, Risk, and Compliance**
+Danny Cologero<br/>
+Threat and Vulnerability Management Analyst<br/>
+Governance, Risk, and Compliance
